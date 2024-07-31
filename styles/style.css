@@ -154,6 +154,32 @@
     margin-bottom: 18px;
 }
 
+/* Know our Global Community */
+
+.global-content{
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 160px;
+}
+
+.global-images{
+    position: relative;
+}
+
+.global-img2{
+    position: absolute;
+    left: 150px;
+    top: 145px;
+    z-index: -1;
+}
+
+.global-img2{
+    width: 200px;
+    height: 200px;
+}
+
 @media screen and (max-width:576px) {
 
     .banner,
