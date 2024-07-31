@@ -2,6 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Yeseva+One&display=swap');
+
+.lobster {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 .poppins-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -180,22 +188,139 @@
     height: 200px;
 }
 
+/* Build Corona Application */
+
+.build{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 80px 0 80px;
+    text-align: center;
+}
+
+.corona{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin: 0 250px 120px;
+}
+
+.app>img{
+    width: 230px;
+    height: 470px;
+    border-radius: 16px;
+}
+
+.box-1>img{
+    width: 145px;
+    height: 145px;
+}
+
+.box>img,.box-2>img{
+    width: 77px;
+    width: 77px;
+}
+
+.corona-img{
+    position: relative;
+}
+
+.box-1{
+    position: absolute;
+    left: -40px;
+    top: -20px;
+    z-index: -1;
+}
+
+.box{
+    position: absolute;
+    left: -20px;
+    bottom: 90px;
+    z-index: -1;
+}
+
+.box-2{
+    position: absolute;
+    left: 170px;
+    top: 170px;
+    z-index: -1;
+}
+
+.corona-text-title{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.corona-text-desco{
+    color: #3E3E3E;
+}
+
+/* Footer styles */
+
+.bg-color{
+    background-color: #0B0D17;
+}
+
+.foot{
+    text-align: center;
+    padding: 40px 0;
+}
+
+.foot-title{
+    font-size: 2.25rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.foot-desco{
+    color: #D9DBE1;
+}
 @media screen and (max-width:576px) {
 
     .banner,
     .cards,
-    .develop-content {
+    .develop-content,
+    .global-content,
+    .corona {
         flex-direction: column;
     }
 
     .banner,
-    .cards,
-    .develop-content {
-        margin: 40px 80px 0 80px;
+    .cards {
+        margin: 40px 50px 0;
     }
 
-    .images-img2{
-        visibility: hidden;
+    .develop-content,
+    .global-content {
+        margin: 40px 50px 0;
+    }
+
+    .images-img2,
+    .global-img2{
+        display: none;
+    }
+
+    .content1-title{
+        font-size: 2.25rem;
+    }
+
+    .devolop-title{
+        font-size: 1.8rem;
+    }
+
+    .devolop-desco{
+        font-size: 0.87rem;
+    }
+    .de-img1,
+    .global-img2,
+    .de-img1{
+        width: 100%;
+        height: 100%;
+    }
+
+    .global-content{
+        margin: 0 70px;
     }
 
 }
